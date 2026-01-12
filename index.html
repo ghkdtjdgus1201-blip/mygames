@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>게임 카드 샘플</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f4f8;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* a 태그를 카드처럼 보이게 */
+    .card {
+      width: 260px;
+      background: white;
+      border-radius: 16px;
+      text-decoration: none;
+      color: black;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .card-button {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      background: #4f46e5;
+      color: white;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🎮 게임 사이트 모음</h1>
+
+  <div class="card-container">
+
+    <a class="card" href="https://example.com" target="_blank">
+      <img src="https://picsum.photos/400/300?random=1" alt="game1">
+      <div class="card-content">
+        <div class="card-title">우주 슈팅 게임</div>
+        <div class="card-desc">레이저를 발사해 외계인을 물리쳐요!</div>
+        <div class="card-button">살펴보기</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://example.com" target="_blank">
+      <img src="https://picsum.photos/400/300?random=2" alt="game2">
+      <div class="card-content">
+        <div class="card-title">점프 어드벤처</div>
+        <div class="card-desc">점프해서 장애물을 피하는 게임</div>
+        <div class="card-button">살펴보기</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://example.com" target="_blank">
+      <img src="https://picsum.photos/400/300?random=3" alt="game3">
+      <div class="card-content">
+        <div class="card-title">퍼즐 챌린지</div>
+        <div class="card-desc">두뇌를 사용하는 퍼즐 게임</div>
+        <div class="card-button">살펴보기</div>
+      </div>
+    </a>
+
+  </div>
+</body>
+</html>
